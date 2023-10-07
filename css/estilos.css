@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* Encabezado */
+.encabezado {
+  width: 100%;
+  height: auto;
+  background-color: rgb(51, 58, 64);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.encabezado__logo {
+  margin-left: 2%;
+  width: 10%;
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.encabezado__logo__img {
+  height: 20vh;
+}
+
+.encabezado__titulo {
+  margin-left: 5%;
+  width: 15%;
+  color: white;
+  font-size: 3.5rem;
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.encabezado__nav {
+  margin-right: 5%;
+  width: 75%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: row;
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    margin-right: 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+.encabezado__nav ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.encabezado__nav ul li a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 3.5rem;
+}
+
+.encabezado_conferencia {
+  color: white;
+}
+
+.encabezado_links {
+  color: rgb(151, 151, 161);
+}
+
+.encabezado_comprar_tickets {
+  color: rgb(42, 168, 69);
+}
+
+/* conferencia Bs As */
+.section_conferencia {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("../asssets/img/palaciodelasaguas.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  color: white;
+  padding-top: 15%;
+  padding-right: 4%;
+  padding-left: 52%;
+  padding-bottom: 10%;
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+.section_conferencia h1 {
+  font-size: 10rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.section_conferencia p {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.section_conferencia_button {
+  font-size: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.comprar_tickets {
+  text-decoration: none;
+  border-radius: 8%;
+  border: none;
+  background-color: rgb(39, 168, 68);
+  color: white;
+  padding: 1%;
+  margin-left: 10px;
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+.quiero_ser_orador {
+  text-decoration: none;
+  border-radius: 8%;
+  border: solid 1px white;
+  color: white;
+  padding: 1%;
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+/* LOS ORADORES */
+.oradores {
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+.oradores h2 {
+  font-size: 8rem;
+}
+.oradores h3 {
+  font-size: 4rem;
+}
+.tarjeta {
+  background-color: white;
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 15px;
+  width: 30%;
+  height: 90%;
+  display: inline-block;
+  margin-right: 35px;
+  margin-top: 20px;
+  text-align: left;
+}
+.tarjeta p {
+  display: flex;
+  font-size: 3rem;
+  overflow-x: hidden;
+  overflow-y: visible;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+.tarjeta img {
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
+}
+.cuerpoTarjeta {
+  margin: 10px;
+}
+.cuerpoTarjeta h4 {
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 0 5px;
+}
+.tituloNombre {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+.colorCeleste {
+  font-size: 3rem;
+  background-color: rgb(0, 200, 255);
+  color: white;
+}
+.colorAmarillo {
+  font-size: 3rem;
+  background-color: rgb(255, 255, 0);
+  color: black;
+}
+.colorGris {
+  font-size: 3rem;
+  background-color: rgb(106, 106, 106);
+  color: white;
+}
+.colorRojo {
+  font-size: 3rem;
+  background-color: rgb(171, 2, 2);
+  color: white;
+}
+
+/* honolulu section. */
+
+.lugar_fecha {
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.lugar_fecha_imagen img {
+  width: 100%;
+  height: auto;
+}
+.lugar_fecha_texto {
+  width: 100%;
+  background-color: rgb(53, 58, 61);
+  display: flex;
+  justify-content: start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.lugar_fecha_texto h2 {
+  color: white;
+  font-size: 4rem;
+  margin-left: 25px;
+}
+.lugar_fecha_texto p{
+  color:white;
+  font-size: 3rem;
+  margin-left: 25px;
+  
+}
+.lugar_fecha_conoce_mas{
+  display: flex;
+  flex-direction: row;  align-items: end; justify-content: end;
+  color: white;
+  font-size: 2rem;
+  border: solid 1px white;
+}
