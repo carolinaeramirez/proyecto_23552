@@ -226,6 +226,7 @@
   border-radius: 5px;
 }
 .colorGris {
+  padding: 2px;
   font-size: 1rem;
   background-color: rgb(106, 106, 106);
   color: white;
@@ -233,6 +234,7 @@
   border-radius: 5px;
 }
 .colorRojo {
+  padding: 2px;
   margin-left: 10px;
   font-size: 1rem;
   background-color: rgb(171, 2, 2);
