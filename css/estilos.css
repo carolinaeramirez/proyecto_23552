@@ -167,9 +167,9 @@
   font-size: 1rem;
 
   /* Responsive */
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     margin: 0 auto;
-  } */
+  }
 }
 
 .quiero_ser_orador {
@@ -181,92 +181,79 @@
   font-size: 1rem;
 
   /* Responsive */
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     margin: 0 auto;
-  } */
+  }
 }
 
 /* LOS ORADORES */
 .oradores {
-  height: 100%;
+
   width: 80%;
-  margin: 0 auto;
+  margin: 2% auto;
   text-align: center;
   padding-top: 5px;
 }
+.contenedor-tarjetas{
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
 
-.contenedor-tarjetas {
+}
+.temas{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-.tarjeta {
-  background: white;
-  border: 1px solid rgb(182, 182, 182);
-  border-radius: 15px;
-  width: 30%;
-  display: inline-block;
-  margin-right: 15px;
-  margin-left: 15px;
-  margin-top: 20px;
-  text-align: left;
-}
-.tarjeta p {
-  display: flex;
-  font-size: 1rem;
-  overflow-x: hidden;
-  overflow-y: visible;
-  text-overflow: ellipsis;
-  white-space: wrap;
-}
-.tarjeta img {
-  width: 100%;
-  height: 60%;
-  object-fit: contain;
-  object-fit: cover;
-  border-radius: 5px 5px 0px 0px;
-}
+  align-items: start;
+  justify-content:start;
 
-.cuerpoTarjeta {
-  margin: 10px;
-}
-.cuerpoTarjeta h4 {
-  display: inline-block;
-  border-radius: 5px;
-  margin-right: 5px;
-  padding: 0 5px;
-}
-.tituloNombre {
-  margin-top: 5px;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
+  
 }
 .colorCeleste {
+  margin-left: 10px;
+  padding: 2px;
   font-size: 1rem;
   background-color: rgb(0, 200, 255);
   color: white;
+  border: 1px solid rgb(0, 200, 255);
+  border-radius: 5px;
 }
 .colorAmarillo {
   font-size: 1rem;
   background-color: rgb(255, 255, 0);
   color: black;
+  padding: 2px;
+  border: 1px solid  rgb(255, 255, 0);
+  border-radius: 5px;
 }
 .colorGris {
   font-size: 1rem;
   background-color: rgb(106, 106, 106);
   color: white;
+  border: 1px solid rgb(106, 106, 106);
+  border-radius: 5px;
 }
 .colorRojo {
+  margin-left: 10px;
   font-size: 1rem;
   background-color: rgb(171, 2, 2);
   color: white;
+  border: 1px solid rgb(171, 2, 2);
+  border-radius: 5px;
+  text-align: left;
 }
-
+.card-title{
+  text-align: left;
+  font-weight: bold;
+  
+}
+.card-text{
+  text-align:justify;
+}
 /* honolulu section. */
 
 .lugar_fecha {
   width: 100%;
-  margin-top: 200px;
+  margin-top: 1%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -354,7 +341,7 @@
   height: auto;
   margin-left: 15%;
 }
-.label-textarea{
+.label-textarea {
   color: rgb(115, 110, 110);
   font-size: 1rem;
   padding: 0;
@@ -409,4 +396,179 @@
   color: white;
   font-size: 1rem;
   margin-left: 5%;
+}
+/* PAGE TICKETS */
+.main-tickets {
+  width: 100%;
+  height: auto;
+}
+/* ****************Categorias de descuentos************ */
+.categoria {
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 3%;
+  align-items: center;
+  align-content: center;
+  /* gap: 10px; */
+  flex-wrap: wrap;
+}
+.categoria__cat {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: 10px;
+  background: #ffffff;
+  text-align: center;
+  padding: 25px;
+}
+.categoria__cat__title {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  line-height: 2.5;
+}
+.categoria__cat__texto {
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+.categoria__cat__porcentaje {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  line-height: 2.5;
+}
+/* Uso el id para darles los bordes de cada color a las categorias */
+#estudiante {
+  border: solid 2px;
+  border-color: rgb(0, 123, 255);
+}
+#trainee {
+  border: solid 2px;
+  border-color: rgb(23, 162, 184);
+}
+#junior {
+  border: solid 2px;
+  border-color: rgb(255, 193, 7);
+}
+
+/* Formulario de compra de tickets */
+
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1% 10% 0% 10%;
+}
+
+.form__encabezado {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2;
+}
+
+.form-input-center {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.input-center {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(141, 138, 138);
+  padding: 2px;
+}
+#categoria {
+  padding: 1px;
+  margin-left: 3px;
+  width: 98%;
+}
+
+.input-label {
+  font-size: 0.9rem;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+/* pago y botones  */
+.total {
+
+  /* margin-top: 20px; */
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+   padding:5px;
+}
+.total_pago {
+  width: 100%;
+  background-color: lightblue;
+  border: 1px solid rgb(204, 229, 255);
+  border-radius: 5px;
+  font-size: 1rem;
+  display: block;
+  padding: 2px;
+}
+.botones {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+}
+.boton {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(151, 201, 62);
+  width: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  border: 1px solid rgb(151, 201, 62);
+  border-radius: 3px;
+  /* margin-left: 5px; */
 }
