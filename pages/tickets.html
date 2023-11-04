@@ -86,22 +86,25 @@
         </div>
 
         <div class="form-input-center">
-          <input class="input-center" type="text" placeholder="Nombre" name="nombre" id="nombre"/>
-          <input class="input-center" type="text" placeholder="Apellido" name="apellido" id="apellido" />
+          <input class="input-center" type="text" placeholder="Nombre" name="nombre" id="nombre" required/>
+          <!-- <div id="errorNombre" class="invalid-feedback">
+            Please provide a valid zip.
+          </div> -->
+          <input class="input-center" type="text" placeholder="Apellido" name="apellido" id="apellido" required/>
         </div>
 
         <div class="form-input-center">
-          <input class="input-center" type="text" placeholder="correo" name="correo" id="correo" />
+          <input class="input-center" type="text" placeholder="correo" name="correo" id="correo" required/>
         </div>
 
         <div class="form-input-center">
           <div class="input-label">
             <label for="cantidad">Cantidad</label>
-            <input class="input-center" type="number" placeholder="cantidad" name="cantidad" id="cantidad"/>
+            <input class="input-center" type="number" placeholder="cantidad" name="cantidad" id="cantidad" min="1" required/>
           </div>
           <div class="input-label">
             <label for="categoria">Categoria</label>
-            <select class="input-center" name="categoria" id="categoria">
+            <select class="input-center" name="categoria" id="categoria" required>
               <option value="Estudiante">Estudiante</option>
               <option value="Trainee">Tainee</option>
               <option value="Junior">Junior</option>
@@ -109,11 +112,11 @@
           </div>
         </div>
         <div class="total">
-          <h1 class="total_pago">Total a pagar: $</h1>
+          <h1 class="total_pago" id="totalPago">Total a pagar: </h1>
         </div>
         <div class="botones">
-          <button class="boton">Borrar</button>
-          <button class="boton">Resumen</button>
+          <button class="boton" id= "botonBorrar" >Borrar</button>
+          <button class="boton" id="botonResumen" >Resumen</button>
         </div>
       </section>
     </main>
@@ -127,5 +130,7 @@
       <a class="anclas_footer" href="">Privacidad</a>
       <a class="anclas_footer" href="">Estudiantes</a>
     </footer>
+    <script src="./js/tickets.js"></script>
   </body>
+  
 </html>

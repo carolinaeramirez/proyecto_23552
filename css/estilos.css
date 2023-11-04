@@ -45,14 +45,12 @@
   font-size: 1rem;
 
   /* Responsive */
-
 }
 @media (max-width: 768px) {
-  .encabezado__titulo{
+  .encabezado__titulo {
     margin-left: 0;
-  width: 100%;
+    width: 100%;
   }
-  
 }
 .encabezado__nav {
   margin-right: 5%;
@@ -63,15 +61,15 @@
   flex-direction: row;
 
   /* Responsive */
-
 }
 @media (max-width: 768px) {
-  .encabezado__nav{
+  .encabezado__nav {
     margin-right: 0;
-  width: 100%;
-  justify-content: flex-start;
+    width: 100%;
+    justify-content: end;
+    flex-direction: column;
+    align-items: end;
   }
-  
 }
 .encabezado__nav ul {
   display: flex;
@@ -119,17 +117,15 @@
   padding-top: 10%;
 
   /* Responsive */
- 
 }
- @media (max-width: 768px) {
-  .section_conferencia{
+@media (max-width: 768px) {
+  .section_conferencia {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
     flex-wrap: wrap;
   }
-    
-  }
+}
 .section_conferencia h1 {
   font-size: 2rem;
   font-weight: 500;
@@ -137,14 +133,12 @@
   padding: 0;
 
   /* Responsive */
-
 }
-  @media (max-width: 768px) {
-    .section_conferencia h1{
-        font-size: 24px;
-    }
-  
+@media (max-width: 768px) {
+  .section_conferencia h1 {
+    font-size: 24px;
   }
+}
 .section_conferencia p {
   font-size: 1rem;
   font-weight: 400;
@@ -220,23 +214,22 @@
   display: flex;
   justify-content: space-between;
   /* Responsive */
-
 }
 @media (max-width: 780px) {
   .contenedor-tarjetas {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  flex-direction: column;
-  flex-wrap: wrap;}
-}
-  @media (max-width: 780px) {
-    .card{
-         flex-direction: column;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    }
- 
+    flex-direction: column;
+    flex-wrap: wrap;
   }
+}
+@media (max-width: 780px) {
+  .card {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 
 .temas {
   display: flex;
@@ -438,6 +431,14 @@
   padding: 20px 100px 20px 100px;
   background: linear-gradient(to right, rgb(28, 54, 67), rgb(29, 82, 113));
 }
+@media (max-width: 780px) {
+  .footer_contenedor {
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+  }
+}
 .footer_contenedor ul {
   list-style: none;
   display: flex;
@@ -453,6 +454,7 @@
   font-size: 1rem;
   margin-left: 5%;
 }
+
 /* PAGE TICKETS */
 .main-tickets {
   width: 100%;
@@ -472,6 +474,7 @@
   /* gap: 10px; */
   flex-wrap: wrap;
 }
+
 .categoria__cat {
   width: 30%;
   height: 30%;
@@ -483,7 +486,13 @@
   background: #ffffff;
   text-align: center;
   padding: 25px;
+  transition: transform 0.3s;
 }
+.categoria__cat:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .categoria__cat__title {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -493,6 +502,7 @@
   line-height: normal;
   line-height: 2.5;
 }
+
 .categoria__cat__texto {
   font-size: 0.8rem;
   font-style: normal;
@@ -511,11 +521,25 @@
   line-height: normal;
   line-height: 2.5;
 }
+@media (max-width: 780px) {
+  .categoria {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .categoria__cat {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
 /* Uso el id para darles los bordes de cada color a las categorias */
 #estudiante {
   border: solid 2px;
   border-color: rgb(0, 123, 255);
 }
+
 #trainee {
   border: solid 2px;
   border-color: rgb(23, 162, 184);
