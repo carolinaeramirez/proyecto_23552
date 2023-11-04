@@ -523,9 +523,13 @@
 }
 @media (max-width: 780px) {
   .categoria {
-    margin: 0;
+    margin-left: 20%;
     padding: 0;
-    width: 100%;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -557,7 +561,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 1% 10% 0% 10%;
 }
 
@@ -577,6 +580,7 @@
   width: 70%;
 }
 
+
 .input-center {
   margin-bottom: 10px;
   margin-right: 5px;
@@ -587,6 +591,19 @@
   border-radius: 5px;
   border: 1px solid rgb(141, 138, 138);
   padding: 2px;
+}
+@media (max-width: 780px) {
+  .form-input-center {
+    margin-left: 0%;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
 }
 #categoria {
   padding: 1px;
