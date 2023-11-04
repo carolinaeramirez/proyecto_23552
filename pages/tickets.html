@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto integrador | Ramírez Carolina E</title>
     <link rel="stylesheet" href="../css/estilos.css" />
-    <link rel="stylesheet" href="../css/tickets.css" />
   </head>
   <body>
     <header>
@@ -34,7 +33,9 @@
               >
             </li>
             <li>
-              <a class="encabezado_links" href="../index.html#oradores">Los oradores</a>
+              <a class="encabezado_links" href="../index.html#oradores"
+                >Los oradores</a
+              >
             </li>
             <li>
               <a class="encabezado_links" href="../index.html#lugarFecha"
@@ -85,18 +86,18 @@
         </div>
 
         <div class="form-input-center">
-          <input class="input-center" type="text" placeholder="Nombre" />
-          <input class="input-center" type="text" placeholder="Apellido" />
+          <input class="input-center" type="text" placeholder="Nombre" name="nombre" id="nombre"/>
+          <input class="input-center" type="text" placeholder="Apellido" name="apellido" id="apellido" />
         </div>
 
         <div class="form-input-center">
-          <input class="input-center" type="text" placeholder="correo" />
+          <input class="input-center" type="text" placeholder="correo" name="correo" id="correo" />
         </div>
 
         <div class="form-input-center">
           <div class="input-label">
             <label for="cantidad">Cantidad</label>
-            <input class="input-center" type="text" placeholder="cantidad" />
+            <input class="input-center" type="number" placeholder="cantidad" name="cantidad" id="cantidad"/>
           </div>
           <div class="input-label">
             <label for="categoria">Categoria</label>

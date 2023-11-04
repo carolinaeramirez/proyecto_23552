@@ -29,10 +29,10 @@
   width: 10%;
 
   /* Responsive */
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     margin-left: 0;
     width: 100%;
-  } */
+  }
 }
 
 .encabezado__logo__img {
@@ -45,12 +45,15 @@
   font-size: 1rem;
 
   /* Responsive */
-  /* @media (max-width: 768px) {
-    margin-left: 0;
-    width: 100%;
-  } */
-}
 
+}
+@media (max-width: 768px) {
+  .encabezado__titulo{
+    margin-left: 0;
+  width: 100%;
+  }
+  
+}
 .encabezado__nav {
   margin-right: 5%;
   width: 75%;
@@ -60,13 +63,16 @@
   flex-direction: row;
 
   /* Responsive */
-  /* @media (max-width: 768px) {
-    margin-right: 0;
-    width: 100%;
-    justify-content: flex-start;
-  } */
-}
 
+}
+@media (max-width: 768px) {
+  .encabezado__nav{
+    margin-right: 0;
+  width: 100%;
+  justify-content: flex-start;
+  }
+  
+}
 .encabezado__nav ul {
   display: flex;
   align-items: flex-end;
@@ -113,13 +119,17 @@
   padding-top: 10%;
 
   /* Responsive */
-  /* @media (max-width: 768px) {
+ 
+}
+ @media (max-width: 768px) {
+  .section_conferencia{
     padding-left: 0;
     padding-right: 0;
     text-align: center;
-  } */
-}
-
+    flex-wrap: wrap;
+  }
+    
+  }
 .section_conferencia h1 {
   font-size: 2rem;
   font-weight: 500;
@@ -127,11 +137,14 @@
   padding: 0;
 
   /* Responsive */
-  /* @media (max-width: 768px) {
-    font-size: 24px;
-  } */
-}
 
+}
+  @media (max-width: 768px) {
+    .section_conferencia h1{
+        font-size: 24px;
+    }
+  
+  }
 .section_conferencia p {
   font-size: 1rem;
   font-weight: 400;
@@ -139,9 +152,9 @@
   padding: 0;
 
   /* Responsive */
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 14px;
-  } */
+  }
 }
 
 .section_conferencia_button {
@@ -151,9 +164,11 @@
   padding-top: 20px;
 
   /* Responsive */
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-  } */
+  }
 }
 
 .comprar_tickets {
@@ -188,25 +203,46 @@
 
 /* LOS ORADORES */
 .oradores {
-
   width: 80%;
   margin: 2% auto;
   text-align: center;
   padding-top: 5px;
+
+  @media (max-width: 780px) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+  }
 }
-.contenedor-tarjetas{
+.contenedor-tarjetas {
   padding: 1%;
   display: flex;
   justify-content: space-between;
+  /* Responsive */
 
 }
-.temas{
+@media (max-width: 780px) {
+  .contenedor-tarjetas {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;}
+}
+  @media (max-width: 780px) {
+    .card{
+         flex-direction: column;
+    width: 100%;
+    }
+ 
+  }
+
+.temas {
   display: flex;
   flex-direction: row;
   align-items: start;
-  justify-content:start;
-
-  
+  justify-content: start;
 }
 .colorCeleste {
   margin-left: 10px;
@@ -222,7 +258,7 @@
   background-color: rgb(255, 255, 0);
   color: black;
   padding: 2px;
-  border: 1px solid  rgb(255, 255, 0);
+  border: 1px solid rgb(255, 255, 0);
   border-radius: 5px;
 }
 .colorGris {
@@ -243,30 +279,34 @@
   border-radius: 5px;
   text-align: left;
 }
-.card-title{
+.card-title {
   text-align: left;
   font-weight: bold;
-  
 }
-.card-text{
-  text-align:justify;
+.card-text {
+  text-align: justify;
 }
 /* honolulu section. */
 
 .lugar_fecha {
   width: 100%;
+  height: 400px;
   margin-top: 1%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
+
 .lugar_fecha_imagen {
-  width: 100%;
+  max-width: 50%;
+  overflow: hidden;
+  align-items: center;
+}
+.lugar_fecha_imagen img {
+  max-width: 100%;
+  height: auto;
 }
 
-.div_img {
-  width: 50%;
-}
 .lugar_fecha_texto {
   padding: 2%;
   width: 50%;
@@ -293,6 +333,20 @@
   color: white;
   font-size: 1rem;
   border: solid 1px white;
+}
+@media (max-width: 780px) {
+  .lugar_fecha {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .lugar_fecha_imagen {
+    max-width: 100%;
+  }
+
+  .lugar_fecha_texto {
+    width: 100%;
+  }
 }
 /* ***************************************************** */
 /* Formulario oradores */
@@ -473,7 +527,6 @@
 
 /* Formulario de compra de tickets */
 
-
 .form {
   width: 100%;
   display: flex;
@@ -526,24 +579,15 @@
   flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
 /* pago y botones  */
 .total {
-
   /* margin-top: 20px; */
   width: 70%;
   display: flex;
   align-items: center;
   justify-content: start;
   flex-direction: row;
-   padding:5px;
+  padding: 5px;
 }
 .total_pago {
   width: 100%;
